@@ -11,7 +11,7 @@ int main() {
     printf("Podaj rozmiar tablicy: ");
     scanf("%d", &n);
 
-    int     *arr = malloc(sizeof(int*) * n);
+    int *arr = malloc(sizeof(int*) * n);
 
     if (arr == NULL){
         perror("Blad alokacji pamieci");
