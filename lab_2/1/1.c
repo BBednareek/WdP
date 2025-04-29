@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-double distance(double, double, double, double);
+double distance(struct Point, struct Point);
 
 struct Point {
     double x;
@@ -29,13 +29,13 @@ int main(void) {
     printf("Podane punkty: ");
     printf("(%.2lf, %.2lf), (%.2lf, %.2lf)", point1.x, point1.y, point2.x, point2.y);
 
-    const double result = distance(point1.x, point2.x, point1.y, point2.y);
+    const double result = distance(point1, point2);
 
     printf("\nOdleglosc pomiedzy punktami wynosi: %.2lf", result);
 
     return EXIT_SUCCESS;
 }
 
-double distance(double x1, double x2, double y1, double y2) {
-    return sqrt(pow(2, x2 - x1) + pow(2, y2 - y1));
+double distance(struct Point point1, struct Point point2) {
+    return sqrt(pow(2, point2.x - point1.x) + pow(2, point2.y - point1.y));
 }
