@@ -1,13 +1,13 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-struct Point {
+typedef struct Point {
     double x;
     double y;
-};
+} point_t;
 
-struct Point* read_arr(int);
-void display_arr(struct Point*, int);
+point_t* read_arr(int);
+void display_arr(point_t*, int);
 
 int main(void) {
     int n = 0;
@@ -15,7 +15,7 @@ int main(void) {
     printf("Podaj ilosc punktow, ktore chcesz dodac do tablicy: ");
     scanf("%d", &n);
 
-    struct Point* arr = read_arr(n);
+    point_t* arr = read_arr(n);
 
     if (arr == NULL) {
         free(arr);
@@ -28,8 +28,8 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 
-struct Point* read_arr(const int n) {
-    struct Point* arr = (struct Point*)malloc(sizeof(struct Point) * n);
+point_t* read_arr(const int n) {
+    point_t* arr = (point_t*)malloc(sizeof(point_t) * n);
 
     if (arr == NULL) {
         perror("Blad podczas alokacji pamieci dla tablicy punktow");
@@ -47,7 +47,7 @@ struct Point* read_arr(const int n) {
     return arr;
 }
 
-void display_arr(struct Point* arr, const int n) {
+void display_arr(point_t* arr, const int n) {
     size_t i = 0 ;
 
     for(; i < n; i++)

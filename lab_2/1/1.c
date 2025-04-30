@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <math.h>
 
-double distance(double, double, double, double);
-
-struct Point {
+typedef struct Point {
     double x;
     double y;
-};
+} point_t;
+
+double distance(point_t, point_t);
 
 int main(void) {
-    struct Point point1;
-    struct Point point2;
+    point_t point1;
+    point_t point2;
 
     printf("Podaj wspolrzedna X pierwszego punktu: ");
     scanf("%lf", &point1.x);
@@ -25,17 +25,16 @@ int main(void) {
     printf("Podaj wspolrzedna Y drugiego punktu: ");
     scanf("%lf", &point2.y);
 
-
     printf("Podane punkty: ");
     printf("(%.2lf, %.2lf), (%.2lf, %.2lf)", point1.x, point1.y, point2.x, point2.y);
 
-    const double result = distance(point1.x, point2.x, point1.y, point2.y);
+    const double result = distance(point1, point2);
 
     printf("\nOdleglosc pomiedzy punktami wynosi: %.2lf", result);
 
     return EXIT_SUCCESS;
 }
 
-double distance(double x1, double x2, double y1, double y2) {
-    return sqrt(pow(2, x2 - x1) + pow(2, y2 - y1));
+double distance(point_t point1, point_t point2) {
+    return sqrt(pow(2, point2.x - point1.x) + pow(2, point2.y - point2.y));
 }
