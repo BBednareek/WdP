@@ -34,8 +34,6 @@ int main(void) {
     print_list(head);
 
     free_nodes(head);
-    free(head);
-
     return EXIT_SUCCESS;
 }
 

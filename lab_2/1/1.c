@@ -13,20 +13,14 @@ int main(void) {
     point_t point1;
     point_t point2;
 
-    printf("Podaj wspolrzedna X pierwszego punktu: ");
-    scanf("%lf", &point1.x);
+    printf("Podaj wspolrzedne pierwszego punktu: ");
+    scanf("%lf %lf", &point1.x, &point1.y);
 
-    printf("Podaj wspolrzedna Y pierwszego punktu: ");
-    scanf("%lf", &point1.y);
+    printf("\nPodaj wspolrzedne drugiego punktu: ");
+    scanf("%lf %lf", &point2.x, &point2.y);
 
-    printf("Podaj wspolrzedna X drugiego punktu: ");
-    scanf("%lf", &point2.x);
-
-    printf("Podaj wspolrzedna Y drugiego punktu: ");
-    scanf("%lf", &point2.y);
-
-    printf("Podane punkty: ");
-    printf("(%.2lf, %.2lf), (%.2lf, %.2lf)", point1.x, point1.y, point2.x, point2.y);
+    printf("\nPodane punkty: ");
+    printf("\n(%.2lf, %.2lf), (%.2lf, %.2lf)", point1.x, point1.y, point2.x, point2.y);
 
     const double result = distance(point1, point2);
 
