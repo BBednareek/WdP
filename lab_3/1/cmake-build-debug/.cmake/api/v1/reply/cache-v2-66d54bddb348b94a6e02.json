@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/barte/Desktop/lab_wdp/lab_3/zad1/cmake-build-debug"
+			"value" : "c:/Users/barte/Desktop/lab_wdp/lab_3/1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/barte/Desktop/lab_wdp/lab_3/zad1/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/barte/Desktop/lab_wdp/lab_3/1/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/barte/Desktop/lab_wdp/lab_3/zad1"
+			"value" : "C:/Users/barte/Desktop/lab_wdp/lab_3/1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/barte/Desktop/lab_wdp/lab_3/zad1/cmake-build-debug"
+			"value" : "C:/Users/barte/Desktop/lab_wdp/lab_3/1/cmake-build-debug"
 		},
 		{
 			"name" : "zad1_IS_TOP_LEVEL",
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/barte/Desktop/lab_wdp/lab_3/zad1"
+			"value" : "C:/Users/barte/Desktop/lab_wdp/lab_3/1"
 		}
 	],
 	"kind" : "cache",
